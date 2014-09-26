@@ -22,7 +22,7 @@
 #include "node.h"
 
 #ifdef _WIN32
-int wmain(int argc, wchar_t *wargv[]) {
+int node_wmain(int argc, wchar_t *wargv[]) {
   // Convert argv to to UTF8
   char** argv = new char*[argc];
   for (int i = 0; i < argc; i++) {
@@ -61,7 +61,7 @@ int wmain(int argc, wchar_t *wargv[]) {
 }
 #else
 // UNIX
-int main(int argc, char *argv[]) {
+int node_main(int argc, char *argv[]) {
   return node::Start(argc, argv);
 }
 #endif

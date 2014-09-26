@@ -73,7 +73,7 @@
   'targets': [
     {
       'target_name': 'node',
-      'type': 'executable',
+      'type': 'static_library',
 
       'dependencies': [
         'node_js2c#host',
