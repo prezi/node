@@ -188,6 +188,7 @@
               'xcode_settings': {
                 'OTHER_LDFLAGS': [
                   #'-Wl,-force_load,<(PRODUCT_DIR)/libopenssl.a',
+                  'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
                 ],
               },
               'conditions': [
@@ -277,6 +278,7 @@
           'xcode_settings': {
             'OTHER_LDFLAGS': [
               #'-Wl,-force_load,<(V8_BASE)',
+              'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
             ],
           },
         }],
