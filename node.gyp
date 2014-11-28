@@ -188,8 +188,8 @@
               'xcode_settings': {
                 'OTHER_LDFLAGS': [
                   #'-Wl,-force_load,<(PRODUCT_DIR)/libopenssl.a',
-                  'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
                 ],
+                'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
               },
               'conditions': [
                 ['OS in "linux freebsd"', {
@@ -278,8 +278,8 @@
           'xcode_settings': {
             'OTHER_LDFLAGS': [
               #'-Wl,-force_load,<(V8_BASE)',
-              'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
             ],
+            'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
           },
         }],
         [ 'node_shared_v8=="false"', {
