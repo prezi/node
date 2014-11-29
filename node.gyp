@@ -187,7 +187,7 @@
               # Do not let unused OpenSSL symbols to slip away
               'xcode_settings': {
                 'OTHER_LDFLAGS': [
-                  '-Wl,-force_load,<(PRODUCT_DIR)/libopenssl.a',
+                  '-all_load',
                 ],
                 'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libstdc++'],
               },
@@ -277,7 +277,7 @@
           'dependencies': [ 'deps/v8/tools/gyp/v8.gyp:postmortem-metadata' ],
           'xcode_settings': {
             'OTHER_LDFLAGS': [
-              '-Wl,-force_load,<(V8_BASE)',
+                '-all_load',
             ],
             'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libstdc++'],
           },
