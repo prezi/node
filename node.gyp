@@ -189,7 +189,7 @@
                 'OTHER_LDFLAGS': [
                   #'-Wl,-force_load,<(PRODUCT_DIR)/libopenssl.a',
                 ],
-                'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
+                'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libstdc++'],
               },
               'conditions': [
                 ['OS in "linux freebsd"', {
@@ -279,7 +279,7 @@
             'OTHER_LDFLAGS': [
               #'-Wl,-force_load,<(V8_BASE)',
             ],
-            'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libc++'],
+            'OTHER_CPLUSPLUSFLAGS' : ['-stdlib=libstdc++'],
           },
         }],
         [ 'node_shared_v8=="false"', {
